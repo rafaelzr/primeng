@@ -108,6 +108,8 @@ export class Calendar implements AfterViewInit,OnChanges,OnDestroy,ControlValueA
     
     @Input() icon: string = 'fa-calendar';
     
+    @Input() value: string;
+    
     @Output() onBlur: EventEmitter<any> = new EventEmitter();
     
     @Output() onSelect: EventEmitter<any> = new EventEmitter();
